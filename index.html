@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./src/main.js" defer></script>
+    <script src="./src/ex9.js" defer></script>
+    <script src="./src/ex6.js" defer></script>
+    <script src="./src/ex4.js" defer></script>
+    <script src="./src/ex7.js" defer></script>
+    <title>Aula assíncrona ─ 18-05</title>
+  </head>
+  <body>
+    <main id="contents">
+      <h1>Exercícios ─ 18 - 05</h1>
+
+      <section id="exercise9">
+        <h3>
+          Uma empresa de desenvolvimento de softwares paga a seu vendedor um
+          fixo de R$500 por mês, mais um bônus de R$50 por sistema vendido. Faça
+          um algoritmo que leia quantos softwares o funcionário vendeu e
+          determine o salário total do funcionário.
+        </h3>
+        <div class="wrapper">
+          <label for="month-sales">Softwares vendidos:</label>
+          <input type="number" id="month-sales" min="0" />
+          <button>Calcule meu salário</button>
+          <div class="result">
+            <p>Renda do mês: <span id="month-wage"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="exercise6">
+        <h3>
+          Escreva um algoritmo para ler as dimensões de um triângulo (base e
+          altura), calcular e escrever a área do triângulo. Sabendo que para
+          calcular a área devemos usar a fórmula:
+          <br />
+          A=(base x altura)/2
+        </h3>
+        <div class="wrapper">
+          <label for="triangle-b">Base:</label>
+          <input type="number" id="triangle-b" min="1" max="200" />
+          <label for="triangle-h">Altura:</label>
+          <input type="number" id="triangle-h" min="1" max="100" />
+          <button>Calcular Área</button>
+          <div class="result">
+            <p>Área do triângulo: <span id="triangle-display"></span></p>
+            <canvas></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="exercise4">
+        <h3>
+          Faça um algoritmo que lê uma temperatura em Fahrenheit e calcula a
+          temperatura correspondente em Celsius. Ao final o programa deve exibir
+          as duas temperaturas. – Usar a fórmula:
+          <br />
+          C = (5 * (F-32) / 9)
+        </h3>
+        <div class="wrapper">
+          <label for="f-temperature">Temperatura (°F):</label>
+          <input type="number" id="f-temperature" />
+          <button>Converter para C°</button>
+
+          <div class="result">
+            <p><span id="fahrenheit"></span> = <span id="celsius"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="exercise7">
+        <h3>
+          Ler o nome de uma pessoa, a sua idade e o seu salário e mostrar as
+          informações.
+        </h3>
+        <div class="wrapper">
+          <div>
+            <label for="user-name">Nome:</label>
+            <input type="text" id="user-name" />
+          </div>
+
+          <div>
+            <label for="user-age">Idade:</label>
+            <input type="number" id="user-age" min="14" max="100" />
+          </div>
+
+          <div>
+            <label for="user-wage">Salário:</label>
+            <input type="text" id="user-wage" maxlength="10" />
+          </div>
+
+          <div class="result">
+            <button>Mostre-me as informações</button>
+            <p>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
